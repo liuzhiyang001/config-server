@@ -1,0 +1,10 @@
+ribbon:
+  ReadTimeout: 12000
+  ConnectTimeout: 3000
+
+#开启监控端点
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: "*"
