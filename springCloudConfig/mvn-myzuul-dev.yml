@@ -1,10 +1,8 @@
-ribbon:
-  ReadTimeout: 12000
-  ConnectTimeout: 3000
-
-#开启监控端点
-  management:
-    endpoints:
-      web:
-        exposure:
-          include: "*"
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: mvn-commer
+    api-b:
+      path: /api-b/**
+      serviceId: mvn-provider
