@@ -6,6 +6,4 @@ zuul:
     api-b:
       path: /api-b/**
       serviceId: mvn-provider
-    api-c:
-      path: /api-c/**
-      serviceId: eureka-client  
+
