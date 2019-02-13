@@ -1,0 +1,8 @@
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: mvn-commer
+    api-b:
+      path: /api-b/**
+      serviceId: mvn-provider
